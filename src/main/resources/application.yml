@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: RevWorkforceApplication
+  jpa:
+    defer-datasource-initialization: true
+    hibernate.ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  h2:
+    console.enabled: true
+  sql:
+    init.mode: always
+  profiles:
+    active: development
+
+server:
+  error:
+    include-message: always

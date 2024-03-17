@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: ${db_url}
+    username: ${db_username}
+    password: ${db_password}
+    driverClassName: org.postgresql.Driver
+  jpa:
+    defer-datasource-initialization: true
+    hibernate.ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8081
